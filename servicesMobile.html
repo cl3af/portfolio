@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços — Mobile — Alexandre Soares</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+
+    if (window.innerWidth >= 640) {
+
+        window.location.href = "index.html";
+
+    }
+
+  </script>
+</head>
+<body class="mobile">
+  <header class="site-header">
+    <nav class="nav">
+      <a href="menuMobile.html" class="logo">Menu</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Serviços</h1>
+
+    <ul class="services-list">
+      <li>
+        <h2>Página web completa</h2>
+        <p>Site responsivo, otimização básica, formulário de contato.</p>
+        <strong>R$ 1.800</strong>
+      </li>
+
+      <li>
+        <h2>Landing page básica</h2>
+        <p>Página única, design limpo e foco em conversão.</p>
+        <strong>R$ 500</strong>
+      </li>
+
+      <li>
+        <h2>Impulsionamento do Instagram</h2>
+        <p>Estratégia de posts, anúncios e análise de resultados.</p>
+        <strong>R$ 600</strong>
+      </li>
+
+      <li>
+        <h2>Outros / Consultoria</h2>
+        <p>Desenvolvimento sob medida e manutenção.</p>
+        <strong>R$ 120 / hora</strong>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year4"></span> Alexandre Soares</p>
+  </footer>
+
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

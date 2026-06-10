@@ -4,13 +4,15 @@ Este repositório contém um site de portfólio estático, focado em apresentar 
 
 O layout é em tema escuro com destaques em neon, inclui versões desktop e mobile, e um redirecionamento simples que leva usuários móveis a uma versão dedicada.
 
+<a href="https://cl3af.netlify.app">Deploy do portfólio rodando</a> 
+
 ## Estrutura principal
 
 - `index.html` — Página inicial (desktop)
 - `github.html` — Página com link para o perfil GitHub (desktop)
 - `portfolio.html` — Lista de projetos (desktop)
 - `services.html` — Serviços e preços (desktop)
-- `indexMobile.html`, `githubMobile.html`, `portfolioMobile.html`, `servicesMobile.html` — Versões simplificadas para dispositivos móveis
+- `githubMobile.html`, `portfolioMobile.html`, `servicesMobile.html` — Versões simplificadas para dispositivos móveis
 - `menuMobile.html` — Menu/entrada para a versão mobile
 - `css/styles.css` — Estilos do site (variáveis CSS, componentes, responsividade)
 - `img/` — Imagens usadas no site (ex.: `logo-projeto1.jpg`)

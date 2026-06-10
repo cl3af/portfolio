@@ -69,13 +69,22 @@ main, .container, section, article, .project-content, .github-info, .services-li
     background:rgba(255, 0, 64, 0.24);
     box-shadow:0 8px 20px rgba(255,0,64,0.06);
   }
-  .container a{
-    display:inline-block;
-    padding:8px 14px;
-    border-radius:999px;
-    background:rgba(255, 0, 64, 0.24);
-    box-shadow:0 8px 20px rgba(255,0,64,0.06);
+
+  .hero {
+    padding:12px; 
+    min-height:40vh;
   }
+  .container a {
+    display: inline-block;
+    min-width: 150px;
+
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(255, 0, 64, 0.24);
+    box-shadow: 0 8px 20px rgba(255,0,64,0.06);
+
+    text-align: center;
+}
   .site-header{border-bottom:1px solid rgba(255, 0, 64, 0.253); border-width: 10px; justify-content:center; align-items:center;} 
   .site-footer{position: fixed;bottom: 0;left: 0;width: 100%;display:flex;justify-content: center;align-items: center;padding: 10px;}
   main, .container, section, article, .project-content, .github-info, .services-list li {

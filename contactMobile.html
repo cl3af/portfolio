@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Mobile — Alexandre Soares</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="menuMobile.html" class="logo">Menu</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contato</h1>
+    <section>
+      <h2>Fale comigo</h2>
+      <p>Se quiser conversar sobre projetos, orçamentos ou parcerias, use os dados abaixo:</p>
+      <ul style="list-style:none;padding:0;gap:12px;display:grid;">
+        <li><strong>Telefone:</strong> <a href="tel:+5511945322802">+55 11 94532-2802</a></li>
+        <li><strong>E-mail:</strong> <a href="mailto:alexkleaf@gmail.com">alexkleaf@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="yearContactMobile"></span> Alexandre Soares</p>
+  </footer>
+
+  <script>
+    document.getElementById('yearContactMobile').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

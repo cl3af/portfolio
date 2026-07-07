@@ -231,11 +231,14 @@ article,
   border-radius: 8px;
 
   background: rgba(255,0,64,.02);
+
 }
 
-/* ===========================
-   CONTATO
-=========================== */
+.services-list li del{
+  color: rgba(255,0,64,.4); 
+}
+
+/*CONTATO*/
 
 .contact-list {
   display: flex;
@@ -261,9 +264,7 @@ article,
   margin-right: 12px;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/*FOOTER*/
 
 .site-footer {
   position: fixed;
@@ -282,9 +283,7 @@ article,
   border-top: 1px solid rgba(255,0,64,.06);
 }
 
-/* ===========================
-   DESKTOP
-=========================== */
+/*DESKTOP */
 
 @media (min-width: 800px) {
 

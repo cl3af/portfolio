@@ -95,3 +95,31 @@ main, .container, section, article, .project-content, .github-info, .services-li
     border-radius:10px;
   }
 }
+
+@view-transition{
+  navigation: auto
+}
+
+@keyframes saindo{
+  to{
+    transform:translatex(-100%); 
+  }
+}
+
+@keyframes entrando{
+  from{
+    transform:translatex(100%);
+  }
+}
+
+::view-transition-group(root){
+  animation-duration: 1s; 
+}
+
+::view-transition-old(root){
+  animation-name: saindo;
+}
+
+::view-transition-new(root){
+  animation-name: entrando;
+}

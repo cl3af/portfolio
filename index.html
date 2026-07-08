@@ -29,7 +29,6 @@
     </nav>
   </header>
 
-  <center>
   <main class="hero">
     <h1 class="hero-title">Programador web</h1>
     <h2 class="hero-sub">Alexandre Soares</h2>
@@ -37,13 +36,14 @@
     <br>
     <h1>Portfólio Resumido</h1>
     <section class="projects">
+      <div class="luz"></div>
       <article class="project">
         <div class="thumb"><img src="img/logo-projeto1.jpg"></div>
         <div class="project-content">
           <h2>Landing page - psicopedagoga</h2>
           <p>Landing page completa e com deploy no ar feita para cliente.</p>
+          <p><a href="https://jessicamartins.netlify.app">Ver site</a></p>
           <p><a href="https://github.com/cl3af/JessicaMartins">Ver no GitHub</a></p>
-          <p><a href="https://jessicamartins.netlify.app">Ver deploy</a></p>
         </div>
       </article>
 
@@ -57,18 +57,40 @@
       <p><a href="https://github.com/cl3af/perfumaria-Fidelius">Ver no GitHub</a></p>
     </div>
   </article>
-
     </section>
 
     
   </main>
-  </center>
     <footer class="site-footer">
         <p>© <span id="year"></span> Alexandre Soares</p> 
     </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  
+    <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const luz = document.querySelector(".luz"); 
+    const projects = document.querySelector(".projects");
+
+    projects.addEventListener("mousemove", (e) => {
+      const posiProjects = projects.getBoundingClientRect();
+
+      const x = e.clientX - posiProjects.left;
+      const y = e.clientY - posiProjects.top;  
+
+
+      luz.style.opacity = 1; 
+      luz.style.left = `${x-100}px`;
+      luz.style.top = `${y-100}px`;
+    }); 
+
+    projects.addEventListener("mouseleave", () => {
+    luz.style.opacity = "0";
+});
   </script>
 </body>
 </html>

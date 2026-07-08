@@ -264,7 +264,7 @@ article,
 .Whatsapp{
   width: 65px;
   height: 65px;
-  margin-right: 5px;
+  margin-right: 3px;
   margin-left: 12px; 
 }
 
@@ -273,9 +273,15 @@ article,
   height: 45px;
   margin-right: 12px;
   margin-left: 18px; 
-  margin-bottom: 12px;
 }
 
+.Instagram {
+  width: 65px;
+  height: 65px;
+  margin-right: 7px;
+  margin-left: 13px; 
+  margin-bottom: 12px;
+}
 /*FOOTER*/
 
 .site-footer {

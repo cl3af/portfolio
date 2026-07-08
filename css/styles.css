@@ -308,6 +308,7 @@ article,
 }
 
   .nav {
+    display: flex; 
     justify-content: center;
     align-items: center;
     padding: 12px;
@@ -318,7 +319,7 @@ article,
     flex-wrap: wrap;
   }
 
-  .nav a {
+  .nav-list a {
     display: inline-block;
     padding: 8px 14px;
 
@@ -348,7 +349,7 @@ article,
   }
 
     .container {
-    margin-top: 0px auto; 
+    margin-top: 0 auto; 
     background: rgba(0, 0, 0, 0.24);
   }
 

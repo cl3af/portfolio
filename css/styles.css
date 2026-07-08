@@ -37,6 +37,11 @@ a:hover {
 
 /* HEADER / NAVEGAÇÃO */
 
+.logo img {
+  width: 120px; 
+  height: 120px;
+}
+
 .site-header {
   border-bottom: 10px solid rgba(255, 0, 64, 0.253);
 }
@@ -49,12 +54,6 @@ a:hover {
   max-width: 1100px;
   margin: 0 auto;
   padding: 18px 24px;
-}
-
-.logo {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--neon);
 }
 
 .nav-list {
@@ -73,6 +72,7 @@ a:hover {
   color: var(--text);
   opacity: .9;
 
+  border: 0px; 
   border-radius: 999px;
   transition: .18s ease;
 }
@@ -302,6 +302,11 @@ article,
 
 @media (max-width: 640px) {
 
+  .logo {
+  width: 150px; 
+  height: 150px;
+}
+
   .nav {
     justify-content: center;
     align-items: center;
@@ -340,6 +345,11 @@ article,
 
     background: rgba(255,0,0,.24);
     box-shadow: 0 8px 20px rgba(255,0,64,.06);
+  }
+
+    .container {
+    margin-top: 0px auto; 
+    background: rgba(0, 0, 0, 0.24);
   }
 
   .site-header {

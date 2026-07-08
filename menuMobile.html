@@ -12,23 +12,34 @@
 
     }
   </script>
+
 </head>
-<body>
-  <main class="hero">
-    <h1 class="hero-title">Programador web</h1>
-    <h2 class="hero-sub">Alexandre Soares</h2>
-    <p class="hero-lead">Crio experiências digitais limpas e responsivas.</p>
-  </main>
-    <center>
-  <main class="container">
+<body class="mobile">
+  <header class="site-header">
+
+    <div class="mobile-nav">
     <img src="img/logoVirtusForge.png" alt="logo do site" class="logo"> 
-    <h1>Menu</h1>
-    <ul style="list-style:none;padding:0">
+     <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+     <ul class="mobile-menu" id="menu">
       <li style="margin:8px 0"><a href="servicesMobile.html">Serviços</a></li>
       <li style="margin:8px 0"><a href="contactMobile.html">Contato</a></li>
       <li style="margin:8px 0"><a href="https://github.com/cl3af">GitHub</a></li>
     </ul>
-    <br> 
+  </header>
+
+  <section class="hero">
+    <h1 class="hero-title">Programador web</h1>
+    <h2 class="hero-sub">Alexandre Soares</h2>
+    <p class="hero-lead">Crio experiências digitais limpas e responsivas.</p>
+  </section>
+    <center>
+  <main class="container">
 
     <h1>Portfólio Resumido</h1>
 
@@ -64,5 +75,18 @@
   <script>
     document.getElementById('yearM').textContent = new Date().getFullYear();
   </script>
+
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", ()=>{
+
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+
+    });
+    </script>
 </body>
 </html>

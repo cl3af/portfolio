@@ -8,9 +8,24 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav">
-      <a href="menuMobile.html" class="menu">Menu</a>
-    </nav>
+
+   <div class="mobile-nav">
+
+    <img src="img/logoVirtusForge.png" alt="logo do site" class="logo"> 
+     <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+     <ul class="mobile-menu" id="menu">
+      <li style="margin:8px 0"><a href="menuMobile.html">Menu</a></li>
+      <li style="margin:8px 0"><a href="servicesMobile.html">Serviços</a></li>
+      <li style="margin:8px 0"><a href="contactMobile.html">Contato</a></li>
+      <li style="margin:8px 0"><a href="https://github.com/cl3af">GitHub</a></li>
+    </ul>
   </header>
 
   <main class="container">
@@ -32,5 +47,18 @@
   <script>
     document.getElementById('yearContactMobile').textContent = new Date().getFullYear();
   </script>
+
+    <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", ()=>{
+
+    menuBtn.classList.toggle("active");
+    menu.classList.toggle("active");
+
+    });
+    </script>
 </body>
 </html>

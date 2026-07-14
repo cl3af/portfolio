@@ -4,7 +4,7 @@ Este repositório contém um site de portfólio estático, focado em apresentar 
 
 O layout é em tema escuro com destaques em neon, inclui versões desktop e mobile, e um redirecionamento simples que leva usuários móveis a uma versão dedicada.
 
-<a href="https://cl3af.netlify.app">Deploy do portfólio rodando</a> 
+<a href="https://virtusforge.pages.dev">Deploy do portfólio rodando</a> 
 
 ## Estrutura principal
 
